@@ -1,0 +1,24 @@
+[build]
+  publish = "site"
+  command = ""
+
+# These hold public info (phone, emails) that also appears on the site, so the
+# secrets scanner shouldn't treat them as leaked secrets.
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "COMPANY_PHONE,OWNER_EMAIL,QUOTE_FROM_EMAIL,CHECKER_EMAIL"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "https://www.123lotlighting.com/*"
+  to = "https://123lotlighting.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
