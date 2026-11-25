@@ -821,7 +821,6 @@ add("/about/", "About | 123 Lot Lighting",
     + content_page(f'''<h2>Why we started</h2>
 <p>Getting a few lights fixed shouldn't mean a week of phone tag with an electrician who doesn't want a small job. Send an address and how many lights are out, and you should have a price.</p>
 <p>We built a company around that. We answer quickly, schedule around your business, and send you a list of what we fixed when the job is done.</p>
-<p><span class="ph">[OWNER BIOS: two or three sentences each, with a photo]</span></p>
 <h2>What we stand behind</h2>
 {ul(["Written, fixed quotes before any work", "Daytime work, with cones around every lift",
      "A list of every fixture fixed or replaced, with photos",

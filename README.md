@@ -15,7 +15,7 @@ Static website for 123 Lot Lighting, hosted on Netlify. Built the same way as 12
 
 ## Placeholders still to fill
 
-Owner bios on the About page are a placeholder (highlighted in yellow). Phone, hours and response time match 123 Lot Striping; the email is quotes@123lotlighting.com, so set up that forward at Namecheap.
+Phone, hours and response time match 123 Lot Striping; the email is quotes@123lotlighting.com, so set up that forward at Namecheap.
 
 ## Photos
 
