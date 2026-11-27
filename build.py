@@ -51,7 +51,9 @@ def verification_tags():
 IMAGES = SRC / "images"
 
 
-PHOTO_POS = {}
+PHOTO_POS = {"led-lighting-upgrades": "center 12%", "light-pole-repair-replacement": "center 2%",
+             "lighting-maintenance-plans": "center 50%", "property-managers": "center 55%", "hoa": "center 45%",
+             "schools": "center 45%", "industrial": "center 78%", "healthcare": "center 62%"}
 
 
 def photo(slot, alt, cls="photo", lazy=True):
@@ -133,7 +135,7 @@ def job_rng(raw):
 
 
 BIZ_ID = CONFIG["domain"] + "/#business"
-OG_IMAGE = CONFIG["domain"] + "/images/property-managers.jpg"
+OG_IMAGE = CONFIG["domain"] + "/images/hero.jpg"
 
 
 def ref_biz():
@@ -567,7 +569,7 @@ add("/led-lighting-upgrades/", "LED Parking Lot Lighting Upgrades | 123 Lot Ligh
     "Replace metal halide and sodium parking lot lights with LED. Brighter, more even light, lower power bills and possible ComEd incentives. DuPage and Will County.",
     sub_hero("LED parking lot lighting upgrades",
              "Old metal halide heads are dim, orange and expensive to run. LED fixtures light the lot evenly and often use half the power or less.")
-    + content_page(f'''
+    + content_page(photo("led-lighting-upgrades", "Bright LED parking lot lights at dusk", "svc-photo") + f'''
 <h2>Why upgrade</h2>
 {ul(["<strong>Lower power bills.</strong> LED often cuts lighting wattage by half or more.",
      "<strong>Far fewer repairs.</strong> LED fixtures last many years longer than metal halide lamps.",
@@ -585,7 +587,7 @@ add("/wall-packs-building-lights/", "Wall Pack & Building Light Repair | 123 Lot
     "Wall packs, entrance, canopy and loading dock lights repaired or replaced with LED for commercial buildings in DuPage and Will County.",
     sub_hero("Wall packs and building lights",
              "The lights on the building matter as much as the ones on the poles. They're what light the doors, walkways and docks.")
-    + content_page(f'''
+    + content_page(photo("wall-packs-building-lights", "Lit parking structure", "svc-photo") + f'''
 <h2>What we work on</h2>
 {ul(["Wall packs over doors and along building walls",
      "Entrance, canopy and soffit lights",
@@ -600,7 +602,7 @@ add("/light-pole-repair-replacement/", "Light Pole Repair & Replacement | 123 Lo
     "Knocked-down, leaning and rusted parking lot light poles made safe and replaced, with fixtures rehung. DuPage and Will County.",
     sub_hero("Light pole repair and replacement",
              "Plows, delivery trucks and rust take poles down. We make the site safe, replace the pole and get the light back on.")
-    + content_page(f'''
+    + content_page(photo("light-pole-repair-replacement", "A leaning parking lot light pole", "svc-photo") + f'''
 <h2>What we handle</h2>
 {ul(["Poles knocked down or bent by vehicles or plows",
      "Leaning poles and loose anchor bolts",
@@ -631,7 +633,7 @@ add("/lighting-maintenance-plans/", "Parking Lot Lighting Maintenance Plans | 12
     "Scheduled parking lot lighting checks and repairs for property managers and commercial owners in DuPage and Will County.",
     sub_hero("Lighting maintenance plans",
              "Stop waiting for complaints. We check every light on a schedule and fix what's out on the same visit.")
-    + content_page(f'''
+    + content_page(photo("lighting-maintenance-plans", "Parking lot light poles at dusk", "svc-photo") + f'''
 <h2>What's included</h2>
 {ul(["Every pole light, wall pack and lit sign checked on a set schedule",
      "Outages fixed on the same visit at your plan rates",

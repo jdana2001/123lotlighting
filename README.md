@@ -19,7 +19,7 @@ Phone, hours and response time match 123 Lot Striping; the email is quotes@123lo
 
 ## Photos
 
-Drop photos into `src/images/` and rebuild. `hero.jpg` replaces the hero illustration. Service pages pick up `<slug>.jpg` (for example `parking-lot-light-repair.jpg`), and industry pages do the same (`hoa.jpg`, `healthcare.jpg`, `schools.jpg`, `industrial.jpg`). `property-managers.jpg`, `retail.jpg` and `texture.jpg` are borrowed from the other 123 sites for now.
+Photos live in `src/images/` (from the lot lighting photos folder in Google Drive, resized to 1600px). `hero.jpg` is the home page photo; service and industry pages use `<slug>.jpg`. Crops are set in `PHOTO_POS` in build.py. Lighted sign repair has no photo yet.
 
 ## Quote form (same system as the other 123 sites)
 
